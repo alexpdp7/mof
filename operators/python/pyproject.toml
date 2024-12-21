@@ -1,0 +1,25 @@
+[project]
+name = "mof-operators"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "alex", email = "alex@pdp7.net" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+files-operator = "mof_operators.files:main"
+
+[project.optional-dependencies]
+files = [
+    "jinja2>=3.1.4",
+]
+yaml = [
+    "pyyaml>=6.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
